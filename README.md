@@ -68,4 +68,5 @@ task or whatever the bootloader requires before calling the main or could call a
 API like the second bootloader to make another task and at the end of it calls the app 
 main function.
 
-
+--Define the vector table fault and exceptions with weak attributes give the app opportunity 
+to implement its routine in the module without editing in the startup.

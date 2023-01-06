@@ -73,6 +73,7 @@ and make the core execute hard fault when stack overflow occurs*/
     .stack : {
         _stack = .;
         __stack = .;
+        __stack_start__ = .;
         . = . + STACK_SIZE;
         . = ALIGN(4);
          __stack_end__ = .;
